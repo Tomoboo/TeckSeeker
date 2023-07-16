@@ -1,0 +1,3036 @@
+[
+    {
+        "id": "9299f08bddd5455e",
+        "type": "tab",
+        "label": "Spresenseからの入力フロー",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "ed7d7c06df775662",
+        "type": "tab",
+        "label": "Spresenseへの出力フロー",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "5c1516ea72182c57",
+        "type": "tab",
+        "label": "LineBot用フロー",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "6727fe0c26d46516",
+        "type": "tab",
+        "label": "kintoneフロー",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "f511b92ff1cd1d5b",
+        "type": "tab",
+        "label": "フロー 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "ccb5fb9013ce2f17",
+        "type": "group",
+        "z": "6727fe0c26d46516",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "af479283f697e813",
+            "26028816674011d9",
+            "f83d5be16a358b68",
+            "faebed426f3bfbdf",
+            "70daea7855739410",
+            "005b0feb4c30d93a",
+            "e7c5ef702709e878",
+            "5b0cc1176ce6bbe7",
+            "246de9b46864c1c8",
+            "d91a578c2c759ead",
+            "55f7dfbd23a4b3a9",
+            "592e03d87ce7068f",
+            "979ea0f973094eb4",
+            "8017f839508f86b5",
+            "91792eac7bf8ac52",
+            "dfdc1921e4957490"
+        ],
+        "x": 34,
+        "y": 19
+    },
+    {
+        "id": "af7a449e487d0d94",
+        "type": "group",
+        "z": "5c1516ea72182c57",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "0958db7fb8750f3c",
+            "bec44ace2949c0f2",
+            "67559e25a6e3d0b0",
+            "98bdc982bd680534",
+            "b2647e95aa5c6277",
+            "52846d34f349a9ed",
+            "10c80239dc5184e8",
+            "0581958b14e4cb31",
+            "b48551fbc6a89f40"
+        ],
+        "x": 134,
+        "y": 1359,
+        "w": 1172,
+        "h": 242
+    },
+    {
+        "id": "91bdbe8539d9d9ac",
+        "type": "group",
+        "z": "5c1516ea72182c57",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "81cebb1d6f6dfe58",
+            "67639ef53e71f9d4",
+            "d3a4ea75fcf14a44",
+            "741397b7630402bf",
+            "fca91d0a21f4b0ca",
+            "ce75ccca5daa2b44",
+            "c36fbdd95499c0ef",
+            "4bbc6d0d1a3b4998",
+            "f6d7fc63bf062838"
+        ],
+        "x": 194,
+        "y": 1079,
+        "w": 1092,
+        "h": 262
+    },
+    {
+        "id": "f81bbc24c517e43d",
+        "type": "group",
+        "z": "5c1516ea72182c57",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "3244a723385c80c4",
+            "c8791b441263da57",
+            "e02823dd9f319576",
+            "c70c79c7b98a8855",
+            "3241ce6cef268867",
+            "69abade504dff0e6",
+            "25613aef595d2676",
+            "b68dbac3b2339e08",
+            "7404244f9123a813",
+            "5d212a7adec08535"
+        ],
+        "x": 174,
+        "y": 759,
+        "w": 1092,
+        "h": 282
+    },
+    {
+        "id": "bf03372d666424a5",
+        "type": "websocket-listener",
+        "path": "wss://ws.sipf.iot.sakura.ad.jp/v0/d9debbe7-1b3d-4942-9072-71d353691912",
+        "wholemsg": "false"
+    },
+    {
+        "id": "458fbe51695205ea",
+        "type": "linetoken",
+        "name": "line token"
+    },
+    {
+        "id": "dd45bd7800d826eb",
+        "type": "kintone-config",
+        "name": "kintone_config"
+    },
+    {
+        "id": "b6dcd9c2112b6098",
+        "type": "websocket-client",
+        "path": "wss://ws.sipf.iot.sakura.ad.jp/v0/d9debbe7-1b3d-4942-9072-71d353691912",
+        "tls": "",
+        "wholemsg": "false",
+        "hb": "0",
+        "subprotocol": ""
+    },
+    {
+        "id": "6c8f3f869c490250",
+        "type": "websocket in",
+        "z": "9299f08bddd5455e",
+        "name": "Spresenseからの入力",
+        "server": "",
+        "client": "b6dcd9c2112b6098",
+        "x": 140,
+        "y": 120,
+        "wires": [
+            [
+                "0b0cd5d196f90931",
+                "f76737dd93747002"
+            ]
+        ]
+    },
+    {
+        "id": "0fb8bc59a94bb7fb",
+        "type": "json",
+        "z": "9299f08bddd5455e",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 390,
+        "y": 520,
+        "wires": [
+            [
+                "53649f1a2f9f2b37"
+            ]
+        ]
+    },
+    {
+        "id": "edf3ce35251b1d5e",
+        "type": "file in",
+        "z": "9299f08bddd5455e",
+        "name": "",
+        "filename": "",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 200,
+        "y": 520,
+        "wires": [
+            [
+                "0fb8bc59a94bb7fb"
+            ]
+        ]
+    },
+    {
+        "id": "53649f1a2f9f2b37",
+        "type": "function",
+        "z": "9299f08bddd5455e",
+        "name": "json形式からhtml形式に変換",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 640,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5f6ef7fce66bf137",
+        "type": "comment",
+        "z": "9299f08bddd5455e",
+        "name": "",
+        "info": "",
+        "x": 200,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "d28ee6b3025795af",
+        "type": "http response",
+        "z": "9299f08bddd5455e",
+        "name": "http_response",
+        "statusCode": "",
+        "headers": {
+            "content-type": "text/plain"
+        },
+        "x": 640,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "664f975c1ba584ba",
+        "type": "switch",
+        "z": "9299f08bddd5455e",
+        "name": "",
+        "property": "payload.device_id",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "31129",
+                "vt": "str"
+            },
+            {
+                "t": "neq",
+                "v": "31129",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 390,
+        "y": 280,
+        "wires": [
+            [
+                "ef1b380d71b3ea41",
+                "3fe6b8b027e42ed6"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "ef1b380d71b3ea41",
+        "type": "debug",
+        "z": "9299f08bddd5455e",
+        "name": "debug 3",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 620,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "0b0cd5d196f90931",
+        "type": "json",
+        "z": "9299f08bddd5455e",
+        "name": "",
+        "property": "payload",
+        "action": "str",
+        "pretty": false,
+        "x": 150,
+        "y": 260,
+        "wires": [
+            [
+                "664f975c1ba584ba"
+            ]
+        ]
+    },
+    {
+        "id": "eae20c1abb6303ac",
+        "type": "websocket out",
+        "z": "9299f08bddd5455e",
+        "name": "Spresenseへの入力",
+        "server": "",
+        "client": "b6dcd9c2112b6098",
+        "x": 890,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "5ae44b9bde1b558e",
+        "type": "debug",
+        "z": "9299f08bddd5455e",
+        "name": "debug 5",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 860,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "65b983fdaaa49c72",
+        "type": "websocket in",
+        "z": "9299f08bddd5455e",
+        "name": "Spresenseからの入力",
+        "server": "",
+        "client": "b6dcd9c2112b6098",
+        "x": 160,
+        "y": 680,
+        "wires": [
+            [
+                "ca11b19744992fa2",
+                "b85b9e23a9e23e70"
+            ]
+        ]
+    },
+    {
+        "id": "0e4c4574a71d08d9",
+        "type": "comment",
+        "z": "9299f08bddd5455e",
+        "name": "",
+        "info": "",
+        "x": 220,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "62116b26bb33f8e0",
+        "type": "http response",
+        "z": "9299f08bddd5455e",
+        "name": "http_response",
+        "statusCode": "",
+        "headers": {
+            "content-type": "text/plain"
+        },
+        "x": 660,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "625cb36fcc695ea7",
+        "type": "function",
+        "z": "9299f08bddd5455e",
+        "name": "function 2",
+        "func": "msg.payload = \"OK\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 780,
+        "wires": [
+            [
+                "34efede029202056"
+            ]
+        ]
+    },
+    {
+        "id": "34efede029202056",
+        "type": "change",
+        "z": "9299f08bddd5455e",
+        "name": "",
+        "rules": [
+            {
+                "t": "delete",
+                "p": "_session",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 620,
+        "y": 780,
+        "wires": [
+            [
+                "5ae44b9bde1b558e"
+            ]
+        ]
+    },
+    {
+        "id": "f1ac73cd3289f06d",
+        "type": "switch",
+        "z": "9299f08bddd5455e",
+        "name": "",
+        "property": "payload.device_id",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "31129",
+                "vt": "str"
+            },
+            {
+                "t": "neq",
+                "v": "31129",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 410,
+        "y": 840,
+        "wires": [
+            [
+                "625cb36fcc695ea7"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "f499205057c18b44",
+        "type": "debug",
+        "z": "9299f08bddd5455e",
+        "name": "debug 6",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 440,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "ca11b19744992fa2",
+        "type": "json",
+        "z": "9299f08bddd5455e",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 170,
+        "y": 820,
+        "wires": [
+            [
+                "f1ac73cd3289f06d",
+                "f499205057c18b44"
+            ]
+        ]
+    },
+    {
+        "id": "b85b9e23a9e23e70",
+        "type": "debug",
+        "z": "9299f08bddd5455e",
+        "name": "debug 7",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 440,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "5106c81303be9613",
+        "type": "function",
+        "z": "9299f08bddd5455e",
+        "name": "function 1",
+        "func": "msg.payload = \"OK\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3fe6b8b027e42ed6",
+        "type": "change",
+        "z": "9299f08bddd5455e",
+        "name": "",
+        "rules": [
+            {
+                "t": "delete",
+                "p": "payload.id",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "payload.timestamp_platform_from_src",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "payload.timestamp_platform_to_dst",
+                "pt": "msg"
+            },
+            {
+                "t": "set",
+                "p": "payload.type",
+                "pt": "msg",
+                "to": "notify",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 200,
+        "wires": [
+            [
+                "eb073dc22b9456a2"
+            ]
+        ]
+    },
+    {
+        "id": "40905ede80fac06b",
+        "type": "change",
+        "z": "9299f08bddd5455e",
+        "name": "",
+        "rules": [
+            {
+                "t": "delete",
+                "p": "_session",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 340,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "eb073dc22b9456a2",
+        "type": "json",
+        "z": "9299f08bddd5455e",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 570,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f76737dd93747002",
+        "type": "debug",
+        "z": "9299f08bddd5455e",
+        "name": "debug 9",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 340,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "4ad4f29094519043",
+        "type": "debug",
+        "z": "ed7d7c06df775662",
+        "name": "debug 4",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 440,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "7acb50a8d59e82ac",
+        "type": "inject",
+        "z": "ed7d7c06df775662",
+        "name": "Level.1(Reset)",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"device_id\":\"31129\",\"type\":\"object\",\"timestamp_src\":\"2023-07-07T00:00:00.000Z\",\"payload\":[{\"type\":\"uint8\",\"tag\":\"1\",\"value\":1}]}",
+        "payloadType": "json",
+        "x": 130,
+        "y": 120,
+        "wires": [
+            [
+                "44a663a7bc50207b",
+                "4ad4f29094519043"
+            ]
+        ]
+    },
+    {
+        "id": "44a663a7bc50207b",
+        "type": "websocket out",
+        "z": "ed7d7c06df775662",
+        "name": "Spresenseへの入力",
+        "server": "bf03372d666424a5",
+        "client": "",
+        "x": 470,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "c11c3ff8ebcaf0e0",
+        "type": "inject",
+        "z": "ed7d7c06df775662",
+        "name": "Level.2",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"device_id\":\"31129\",\"type\":\"object\",\"timestamp_src\":\"2023-07-07T00:00:00.000Z\",\"payload\":[{\"type\":\"uint8\",\"tag\":\"1\",\"value\":2}]}",
+        "payloadType": "json",
+        "x": 110,
+        "y": 180,
+        "wires": [
+            [
+                "44a663a7bc50207b",
+                "4ad4f29094519043"
+            ]
+        ]
+    },
+    {
+        "id": "1a023a20a1859ac4",
+        "type": "inject",
+        "z": "ed7d7c06df775662",
+        "name": "Level.3(GOLE!)",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"device_id\":\"31129\",\"type\":\"object\",\"timestamp_src\":\"2023-07-07T00:00:00.000Z\",\"payload\":[{\"type\":\"uint8\",\"tag\":\"1\",\"value\":3}]}",
+        "payloadType": "json",
+        "x": 140,
+        "y": 240,
+        "wires": [
+            [
+                "44a663a7bc50207b",
+                "4ad4f29094519043"
+            ]
+        ]
+    },
+    {
+        "id": "ac1feae8f2b5d101",
+        "type": "comment",
+        "z": "ed7d7c06df775662",
+        "name": "デモ用(Level直接操作)",
+        "info": "",
+        "x": 140,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "c7d0fde6ef9dff8b",
+        "type": "kintone",
+        "z": "ed7d7c06df775662",
+        "name": "GET",
+        "config": "dd45bd7800d826eb",
+        "appId": "1",
+        "query": "",
+        "records": "",
+        "method": "GET",
+        "x": 190,
+        "y": 420,
+        "wires": [
+            [
+                "cba3f67a6eba290f"
+            ]
+        ]
+    },
+    {
+        "id": "cba3f67a6eba290f",
+        "type": "split",
+        "z": "ed7d7c06df775662",
+        "name": "msg.payload_Array",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 430,
+        "y": 420,
+        "wires": [
+            [
+                "5f11891a966a078b"
+            ]
+        ]
+    },
+    {
+        "id": "5f11891a966a078b",
+        "type": "split",
+        "z": "ed7d7c06df775662",
+        "name": "records_Array",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 440,
+        "y": 520,
+        "wires": [
+            [
+                "551ff962416a0b7a",
+                "ad6299a1c1430ecf"
+            ]
+        ]
+    },
+    {
+        "id": "551ff962416a0b7a",
+        "type": "debug",
+        "z": "ed7d7c06df775662",
+        "name": "debug",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 690,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "b1f3fcfea319696e",
+        "type": "function",
+        "z": "ed7d7c06df775662",
+        "name": "Get name and coin",
+        "func": "var res = msg.payload\nvar coin_array = []\nvar name_array = []\nvar index = 0\nfor (var key in res) {\n    if (key != null && typeof (res[key]) != \"string\") {\n        if (res[key].type == \"SINGLE_LINE_TEXT\") {\n            name_array.push(res[key].value)\n        }\n        else if (res[key].type == \"NUMBER\") {\n            coin_array.push(res[key].value)\n        }\n    }\n}\n msg.coinbox.name = name_array\n msg.coinbox.coin = coin_array\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 640,
+        "wires": [
+            [
+                "c3eb4407d900d076"
+            ]
+        ]
+    },
+    {
+        "id": "c3eb4407d900d076",
+        "type": "json",
+        "z": "ed7d7c06df775662",
+        "name": "Convert json",
+        "property": "payload",
+        "action": "str",
+        "pretty": false,
+        "x": 430,
+        "y": 740,
+        "wires": [
+            [
+                "064da8fc28b5f678"
+            ]
+        ]
+    },
+    {
+        "id": "ad6299a1c1430ecf",
+        "type": "change",
+        "z": "ed7d7c06df775662",
+        "name": "Add msg.coinbox.name and coin",
+        "rules": [
+            {
+                "t": "set",
+                "p": "coinbox.name",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "coinbox.coin",
+                "pt": "msg",
+                "to": "",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 460,
+        "y": 580,
+        "wires": [
+            [
+                "b1f3fcfea319696e"
+            ]
+        ]
+    },
+    {
+        "id": "064da8fc28b5f678",
+        "type": "debug",
+        "z": "ed7d7c06df775662",
+        "name": "msg.coinbox",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "coinbox",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 650,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "6fea1688aa4f3976",
+        "type": "inject",
+        "z": "ed7d7c06df775662",
+        "name": "Start",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "5",
+        "topic": "",
+        "x": 70,
+        "y": 420,
+        "wires": [
+            [
+                "c7d0fde6ef9dff8b"
+            ]
+        ]
+    },
+    {
+        "id": "b78707f7d8c2043b",
+        "type": "inject",
+        "z": "5c1516ea72182c57",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 240,
+        "y": 260,
+        "wires": [
+            [
+                "c3222856e7a3ac43"
+            ]
+        ]
+    },
+    {
+        "id": "c3222856e7a3ac43",
+        "type": "line-notify",
+        "z": "5c1516ea72182c57",
+        "name": "",
+        "message": "今日もお疲れ！",
+        "contentType": "message",
+        "imageThumbnail": "",
+        "imageUrl": "",
+        "sticker": "default",
+        "stickerPackageId": "1",
+        "stickerId": "1",
+        "silent": false,
+        "creds": "458fbe51695205ea",
+        "x": 420,
+        "y": 260,
+        "wires": [
+            [
+                "ea37817ddc3d06ef"
+            ]
+        ]
+    },
+    {
+        "id": "ea37817ddc3d06ef",
+        "type": "debug",
+        "z": "5c1516ea72182c57",
+        "name": "msg-payload",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 610,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "260be3023fe9c6d3",
+        "type": "Webhook",
+        "z": "5c1516ea72182c57",
+        "name": "/webhook",
+        "url": "/webhook",
+        "x": 80,
+        "y": 440,
+        "wires": [
+            [
+                "6fef2eaa7f10ea3f"
+            ]
+        ]
+    },
+    {
+        "id": "d598a1b9f7b569f3",
+        "type": "ReplyMessage",
+        "z": "5c1516ea72182c57",
+        "name": "",
+        "replyMessage": "",
+        "x": 1240,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "6fef2eaa7f10ea3f",
+        "type": "switch",
+        "z": "5c1516ea72182c57",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "00000000000000000000000000000000",
+                "vt": "str"
+            },
+            {
+                "t": "regex",
+                "v": "の貯金を教えて",
+                "vt": "str",
+                "case": false
+            },
+            {
+                "t": "eq",
+                "v": "全部の貯金額を教えて",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "目標金額を教えて",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 5,
+        "x": 270,
+        "y": 440,
+        "wires": [
+            [
+                "153d6df79dba5cfa"
+            ],
+            [
+                "25613aef595d2676"
+            ],
+            [
+                "c36fbdd95499c0ef"
+            ],
+            [
+                "10c80239dc5184e8"
+            ],
+            [
+                "7afac4be27c4cbd9"
+            ]
+        ]
+    },
+    {
+        "id": "e449624ce9e29ea5",
+        "type": "function",
+        "z": "5c1516ea72182c57",
+        "name": "早く貯めてください",
+        "func": "msg = \"早く貯めてください\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 740,
+        "y": 360,
+        "wires": [
+            [
+                "d598a1b9f7b569f3"
+            ]
+        ]
+    },
+    {
+        "id": "7afac4be27c4cbd9",
+        "type": "function",
+        "z": "5c1516ea72182c57",
+        "name": "そのままオウム返し",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 440,
+        "wires": [
+            [
+                "d598a1b9f7b569f3"
+            ]
+        ]
+    },
+    {
+        "id": "153d6df79dba5cfa",
+        "type": "http response",
+        "z": "5c1516ea72182c57",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 490,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "a0cf67c9d7654e25",
+        "type": "comment",
+        "z": "5c1516ea72182c57",
+        "name": "LineDevelopperで検証した時の応答処理",
+        "info": "",
+        "x": 500,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "81cebb1d6f6dfe58",
+        "type": "kintone",
+        "z": "5c1516ea72182c57",
+        "g": "91bdbe8539d9d9ac",
+        "name": "GET",
+        "config": "dd45bd7800d826eb",
+        "appId": "1",
+        "query": "",
+        "records": "",
+        "method": "GET",
+        "x": 390,
+        "y": 1180,
+        "wires": [
+            [
+                "ce75ccca5daa2b44"
+            ]
+        ]
+    },
+    {
+        "id": "67639ef53e71f9d4",
+        "type": "split",
+        "z": "5c1516ea72182c57",
+        "g": "91bdbe8539d9d9ac",
+        "name": "msg.payload_Array",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 690,
+        "y": 1240,
+        "wires": [
+            [
+                "741397b7630402bf"
+            ]
+        ]
+    },
+    {
+        "id": "d3a4ea75fcf14a44",
+        "type": "function",
+        "z": "5c1516ea72182c57",
+        "g": "91bdbe8539d9d9ac",
+        "name": "Get name and coin",
+        "func": "var res = msg.payload\nvar coin_array = []\nvar name_array = []\nvar index = 0\nfor (let index = 0; index < res.length; index++) {\n    for (var key in res[index]) {\n        if (key != null && typeof (res[index][key]) != \"string\") {\n            if (res[index][key].type == \"SINGLE_LINE_TEXT\") {\n                name_array.push(res[index][key].value)\n            }\n            else if (res[index][key].type == \"NUMBER\") {\n                coin_array.push(res[index][key].value)\n            }\n        }\n    }\n}\n\n msg.coinbox.name = name_array\n msg.coinbox.coin = coin_array\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 1300,
+        "wires": [
+            [
+                "fca91d0a21f4b0ca"
+            ]
+        ]
+    },
+    {
+        "id": "741397b7630402bf",
+        "type": "change",
+        "z": "5c1516ea72182c57",
+        "g": "91bdbe8539d9d9ac",
+        "name": "Add msg.coinbox.name and coin",
+        "rules": [
+            {
+                "t": "set",
+                "p": "coinbox.name",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "coinbox.coin",
+                "pt": "msg",
+                "to": "",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "level",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 360,
+        "y": 1300,
+        "wires": [
+            [
+                "d3a4ea75fcf14a44"
+            ]
+        ]
+    },
+    {
+        "id": "fca91d0a21f4b0ca",
+        "type": "function",
+        "z": "5c1516ea72182c57",
+        "g": "91bdbe8539d9d9ac",
+        "name": "目標金額　ー　合計貯金額",
+        "func": "var goal_money = 0;\nvar now_money = 0;\nvar now_level = 0;\n\nfor (let index = 0; index < msg.coinbox.name.length;index++) {\n    if (msg.coinbox.name[index] == \"目標金額\") {\n        goal_money = msg.coinbox.coin[index]\n    }\n    else {\n        now_money += Number(msg.coinbox.coin[index])\n    }   \n}\n\nmsg.payload = Number(now_money)\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 980,
+        "y": 1300,
+        "wires": [
+            [
+                "4bbc6d0d1a3b4998"
+            ]
+        ]
+    },
+    {
+        "id": "ce75ccca5daa2b44",
+        "type": "change",
+        "z": "5c1516ea72182c57",
+        "g": "91bdbe8539d9d9ac",
+        "name": "",
+        "rules": [
+            {
+                "t": "delete",
+                "p": "payload.totalCount",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 430,
+        "y": 1240,
+        "wires": [
+            [
+                "67639ef53e71f9d4"
+            ]
+        ]
+    },
+    {
+        "id": "c36fbdd95499c0ef",
+        "type": "change",
+        "z": "5c1516ea72182c57",
+        "g": "91bdbe8539d9d9ac",
+        "name": "",
+        "rules": [
+            {
+                "t": "delete",
+                "p": "payload",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 370,
+        "y": 1120,
+        "wires": [
+            [
+                "81cebb1d6f6dfe58"
+            ]
+        ]
+    },
+    {
+        "id": "4bbc6d0d1a3b4998",
+        "type": "template",
+        "z": "5c1516ea72182c57",
+        "g": "91bdbe8539d9d9ac",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "貯金額の合計は\n{{payload}}円です。\n順調ですね！\nこのまま、いっけー！！",
+        "output": "str",
+        "x": 1200,
+        "y": 1300,
+        "wires": [
+            [
+                "d598a1b9f7b569f3"
+            ]
+        ]
+    },
+    {
+        "id": "0958db7fb8750f3c",
+        "type": "kintone",
+        "z": "5c1516ea72182c57",
+        "g": "af7a449e487d0d94",
+        "name": "GET",
+        "config": "dd45bd7800d826eb",
+        "appId": "1",
+        "query": "",
+        "records": "",
+        "method": "GET",
+        "x": 330,
+        "y": 1480,
+        "wires": [
+            [
+                "52846d34f349a9ed"
+            ]
+        ]
+    },
+    {
+        "id": "bec44ace2949c0f2",
+        "type": "split",
+        "z": "5c1516ea72182c57",
+        "g": "af7a449e487d0d94",
+        "name": "msg.payload_Array",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 810,
+        "y": 1480,
+        "wires": [
+            [
+                "98bdc982bd680534"
+            ]
+        ]
+    },
+    {
+        "id": "67559e25a6e3d0b0",
+        "type": "function",
+        "z": "5c1516ea72182c57",
+        "g": "af7a449e487d0d94",
+        "name": "Get name and coin",
+        "func": "var res = msg.payload\nvar coin_array = []\nvar name_array = []\nvar index = 0\nfor (let index = 0; index < res.length; index++) {\n    for (var key in res[index]) {\n        if (key != null && typeof (res[index][key]) != \"string\") {\n            if (res[index][key].type == \"SINGLE_LINE_TEXT\") {\n                name_array.push(res[index][key].value)\n            }\n            else if (res[index][key].type == \"NUMBER\") {\n                coin_array.push(res[index][key].value)\n            }\n        }\n    }\n}\n\n msg.coinbox.name = name_array\n msg.coinbox.coin = coin_array\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 790,
+        "y": 1560,
+        "wires": [
+            [
+                "b2647e95aa5c6277"
+            ]
+        ]
+    },
+    {
+        "id": "98bdc982bd680534",
+        "type": "change",
+        "z": "5c1516ea72182c57",
+        "g": "af7a449e487d0d94",
+        "name": "Add msg.coinbox.name and coin",
+        "rules": [
+            {
+                "t": "set",
+                "p": "coinbox.name",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "coinbox.coin",
+                "pt": "msg",
+                "to": "",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "level",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 420,
+        "y": 1560,
+        "wires": [
+            [
+                "67559e25a6e3d0b0"
+            ]
+        ]
+    },
+    {
+        "id": "b2647e95aa5c6277",
+        "type": "function",
+        "z": "5c1516ea72182c57",
+        "g": "af7a449e487d0d94",
+        "name": "目標金額　ー　合計貯金額",
+        "func": "var goal_money = 0;\nvar now_money = 0;\nvar now_level = 0;\n\nfor (let index = 0; index < msg.coinbox.name.length;index++) {\n    if (msg.coinbox.name[index] == \"目標金額\") {\n        goal_money = msg.coinbox.coin[index]\n    }\n    else {\n        now_money += msg.coinbox.coin[index]\n    }   \n}\n\nmsg.payload = Number(goal_money)\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1100,
+        "y": 1560,
+        "wires": [
+            [
+                "0581958b14e4cb31"
+            ]
+        ]
+    },
+    {
+        "id": "52846d34f349a9ed",
+        "type": "change",
+        "z": "5c1516ea72182c57",
+        "g": "af7a449e487d0d94",
+        "name": "",
+        "rules": [
+            {
+                "t": "delete",
+                "p": "payload.totalCount",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 550,
+        "y": 1480,
+        "wires": [
+            [
+                "bec44ace2949c0f2"
+            ]
+        ]
+    },
+    {
+        "id": "10c80239dc5184e8",
+        "type": "change",
+        "z": "5c1516ea72182c57",
+        "g": "af7a449e487d0d94",
+        "name": "",
+        "rules": [
+            {
+                "t": "delete",
+                "p": "payload",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 250,
+        "y": 1420,
+        "wires": [
+            [
+                "0958db7fb8750f3c"
+            ]
+        ]
+    },
+    {
+        "id": "0581958b14e4cb31",
+        "type": "template",
+        "z": "5c1516ea72182c57",
+        "g": "af7a449e487d0d94",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "あなたの目標金額は\n{{payload}}円です。",
+        "output": "str",
+        "x": 1220,
+        "y": 1440,
+        "wires": [
+            [
+                "d598a1b9f7b569f3"
+            ]
+        ]
+    },
+    {
+        "id": "3244a723385c80c4",
+        "type": "kintone",
+        "z": "5c1516ea72182c57",
+        "g": "f81bbc24c517e43d",
+        "name": "GET",
+        "config": "dd45bd7800d826eb",
+        "appId": "1",
+        "query": "",
+        "records": "",
+        "method": "GET",
+        "x": 1030,
+        "y": 840,
+        "wires": [
+            [
+                "69abade504dff0e6"
+            ]
+        ]
+    },
+    {
+        "id": "c8791b441263da57",
+        "type": "split",
+        "z": "5c1516ea72182c57",
+        "g": "f81bbc24c517e43d",
+        "name": "msg.payload_Array",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 670,
+        "y": 940,
+        "wires": [
+            [
+                "c70c79c7b98a8855"
+            ]
+        ]
+    },
+    {
+        "id": "e02823dd9f319576",
+        "type": "function",
+        "z": "5c1516ea72182c57",
+        "g": "f81bbc24c517e43d",
+        "name": "Get name and coin",
+        "func": "var res = msg.payload\nvar coin_array = []\nvar name_array = []\nvar index = 0\nvar is_match = false\nfor (let index = 0; index < res.length; index++) {\n    for (var key in res[index]) {\n        if (key != null && typeof (res[index][key]) != \"string\") {\n            if (res[index][key].type == \"SINGLE_LINE_TEXT\") {\n                if (res[index][key].value == msg.uniqueName){\n                    name_array.push(res[index][key].value)\n                    is_match = true\n                }\n            }\n            else if (res[index][key].type == \"NUMBER\") {\n                if(is_match) {\n                    coin_array.push(res[index][key].value)\n                    is_match = false\n                } \n            }\n        }\n    }\n}\n\n msg.coinbox.name = name_array\n msg.coinbox.coin = coin_array\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 670,
+        "y": 1000,
+        "wires": [
+            [
+                "3241ce6cef268867"
+            ]
+        ]
+    },
+    {
+        "id": "c70c79c7b98a8855",
+        "type": "change",
+        "z": "5c1516ea72182c57",
+        "g": "f81bbc24c517e43d",
+        "name": "Add msg.coinbox.name and coin",
+        "rules": [
+            {
+                "t": "set",
+                "p": "coinbox.name",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "coinbox.coin",
+                "pt": "msg",
+                "to": "",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "level",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 340,
+        "y": 1000,
+        "wires": [
+            [
+                "e02823dd9f319576"
+            ]
+        ]
+    },
+    {
+        "id": "3241ce6cef268867",
+        "type": "function",
+        "z": "5c1516ea72182c57",
+        "g": "f81bbc24c517e43d",
+        "name": "目標金額　ー　合計貯金額",
+        "func": "var goal_money = 0;\nvar now_money = 0;\nvar now_level = 0;\n\nfor (let index = 0; index < msg.coinbox.name.length;index++) {\n    if (msg.coinbox.name[index] == \"目標金額\") {\n        goal_money = msg.coinbox.coin[index]\n    }\n    else {\n        now_money += Number(msg.coinbox.coin[index])\n    }   \n}\n\nmsg.payload = Number(now_money)\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 960,
+        "y": 1000,
+        "wires": [
+            [
+                "b68dbac3b2339e08"
+            ]
+        ]
+    },
+    {
+        "id": "69abade504dff0e6",
+        "type": "change",
+        "z": "5c1516ea72182c57",
+        "g": "f81bbc24c517e43d",
+        "name": "",
+        "rules": [
+            {
+                "t": "delete",
+                "p": "payload.totalCount",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 410,
+        "y": 940,
+        "wires": [
+            [
+                "c8791b441263da57"
+            ]
+        ]
+    },
+    {
+        "id": "25613aef595d2676",
+        "type": "change",
+        "z": "5c1516ea72182c57",
+        "g": "f81bbc24c517e43d",
+        "name": "uniqueName追加、payload削除",
+        "rules": [
+            {
+                "t": "set",
+                "p": "uniqueName",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "payload",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 390,
+        "y": 820,
+        "wires": [
+            [
+                "5d212a7adec08535"
+            ]
+        ]
+    },
+    {
+        "id": "b68dbac3b2339e08",
+        "type": "template",
+        "z": "5c1516ea72182c57",
+        "g": "f81bbc24c517e43d",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "{{ uniqueName }}の貯金額は\n{{payload}}円です。\n順調ですね！\nこのまま、いっけー！！",
+        "output": "str",
+        "x": 1180,
+        "y": 1000,
+        "wires": [
+            [
+                "d598a1b9f7b569f3"
+            ]
+        ]
+    },
+    {
+        "id": "7404244f9123a813",
+        "type": "comment",
+        "z": "5c1516ea72182c57",
+        "g": "f81bbc24c517e43d",
+        "name": "名前を指定",
+        "info": "",
+        "x": 700,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "f6d7fc63bf062838",
+        "type": "comment",
+        "z": "5c1516ea72182c57",
+        "g": "91bdbe8539d9d9ac",
+        "name": "全体の貯金額",
+        "info": "",
+        "x": 650,
+        "y": 1120,
+        "wires": []
+    },
+    {
+        "id": "b48551fbc6a89f40",
+        "type": "comment",
+        "z": "5c1516ea72182c57",
+        "g": "af7a449e487d0d94",
+        "name": "目標金額",
+        "info": "",
+        "x": 620,
+        "y": 1400,
+        "wires": []
+    },
+    {
+        "id": "5d212a7adec08535",
+        "type": "function",
+        "z": "5c1516ea72182c57",
+        "g": "f81bbc24c517e43d",
+        "name": ".replace(/の貯金を教えて$/, \"\");",
+        "func": "var inputString = msg.uniqueName\nvar removedString = inputString.replace(/の貯金を教えて$/, \"\");\n\nmsg.uniqueName = removedString\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 750,
+        "y": 840,
+        "wires": [
+            [
+                "3244a723385c80c4"
+            ]
+        ]
+    },
+    {
+        "id": "6c3a72a4c4b44ff6",
+        "type": "inject",
+        "z": "5c1516ea72182c57",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "お父さんの貯金を教えて",
+        "payloadType": "str",
+        "x": 150,
+        "y": 540,
+        "wires": [
+            [
+                "6fef2eaa7f10ea3f"
+            ]
+        ]
+    },
+    {
+        "id": "af479283f697e813",
+        "type": "kintone",
+        "z": "6727fe0c26d46516",
+        "g": "ccb5fb9013ce2f17",
+        "name": "GET",
+        "config": "dd45bd7800d826eb",
+        "appId": "1",
+        "query": "",
+        "records": "",
+        "method": "GET",
+        "x": 270,
+        "y": 240,
+        "wires": [
+            [
+                "8017f839508f86b5",
+                "dfdc1921e4957490"
+            ]
+        ]
+    },
+    {
+        "id": "26028816674011d9",
+        "type": "inject",
+        "z": "6727fe0c26d46516",
+        "g": "ccb5fb9013ce2f17",
+        "name": "Start",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "5",
+        "topic": "",
+        "x": 130,
+        "y": 240,
+        "wires": [
+            [
+                "af479283f697e813"
+            ]
+        ]
+    },
+    {
+        "id": "91792eac7bf8ac52",
+        "type": "comment",
+        "z": "6727fe0c26d46516",
+        "g": "ccb5fb9013ce2f17",
+        "name": "kintone→複数レコードを取得→SPRESENSEに送信",
+        "info": "",
+        "x": 250,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "f83d5be16a358b68",
+        "type": "split",
+        "z": "6727fe0c26d46516",
+        "g": "ccb5fb9013ce2f17",
+        "name": "msg.payload_Array",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 630,
+        "y": 120,
+        "wires": [
+            [
+                "70daea7855739410"
+            ]
+        ]
+    },
+    {
+        "id": "faebed426f3bfbdf",
+        "type": "function",
+        "z": "6727fe0c26d46516",
+        "g": "ccb5fb9013ce2f17",
+        "name": "Get name and coin",
+        "func": "var res = msg.payload\nvar coin_array = []\nvar name_array = []\nvar index = 0\nfor (let index = 0; index < res.length; index++) {\n    for (var key in res[index]) {\n        if (key != null && typeof (res[index][key]) != \"string\") {\n            if (res[index][key].type == \"SINGLE_LINE_TEXT\") {\n                name_array.push(res[index][key].value)\n            }\n            else if (res[index][key].type == \"NUMBER\") {\n                coin_array.push(res[index][key].value)\n            }\n        }\n    }\n}\n\n msg.coinbox.name = name_array\n msg.coinbox.coin = coin_array\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 610,
+        "y": 260,
+        "wires": [
+            [
+                "005b0feb4c30d93a"
+            ]
+        ]
+    },
+    {
+        "id": "70daea7855739410",
+        "type": "change",
+        "z": "6727fe0c26d46516",
+        "g": "ccb5fb9013ce2f17",
+        "name": "Add msg.coinbox.name and coin",
+        "rules": [
+            {
+                "t": "set",
+                "p": "coinbox.name",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "coinbox.coin",
+                "pt": "msg",
+                "to": "",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "level",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 640,
+        "y": 180,
+        "wires": [
+            [
+                "faebed426f3bfbdf",
+                "979ea0f973094eb4"
+            ]
+        ]
+    },
+    {
+        "id": "5813f8bfbd0e057d",
+        "type": "kintone",
+        "z": "6727fe0c26d46516",
+        "name": "POST",
+        "config": "dd45bd7800d826eb",
+        "appId": "1",
+        "query": "",
+        "records": "",
+        "method": "POST",
+        "x": 1150,
+        "y": 880,
+        "wires": [
+            [
+                "1894bcac2af97c96",
+                "2430b2d465bee1da"
+            ]
+        ]
+    },
+    {
+        "id": "5a2769dcf7a1e276",
+        "type": "inject",
+        "z": "6727fe0c26d46516",
+        "name": "Start",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "5",
+        "topic": "",
+        "payload": "{\"id\":\"343f850c-cc53-473c-ac5e-2932f644dcb4\",\"device_id\":\"31138\",\"timestamp_src\":\"1970-01-01T00:00:00.000Z\",\"timestamp_platform_from_src\":\"2023-07-15T05:34:21.751Z\",\"timestamp_platform_to_dst\":\"2023-07-15T05:34:21.842Z\",\"type\":\"object\",\"payload\":[{\"type\":\"uint8\",\"tag\":\"01\",\"value\":5},{\"type\":\"uint16\",\"tag\":\"02\",\"value\":1}]}",
+        "payloadType": "str",
+        "x": 70,
+        "y": 1000,
+        "wires": [
+            [
+                "643fee64eb2be0c7"
+            ]
+        ]
+    },
+    {
+        "id": "94912d5213c1559b",
+        "type": "comment",
+        "z": "6727fe0c26d46516",
+        "name": "debug memo",
+        "info": "msg.coinbox.name = z\nmsg.coinbox.coin = coin_array[0]",
+        "x": 1130,
+        "y": 1120,
+        "wires": []
+    },
+    {
+        "id": "1894bcac2af97c96",
+        "type": "debug",
+        "z": "6727fe0c26d46516",
+        "name": "msg.payload",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1350,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "698d61f3ce65c021",
+        "type": "comment",
+        "z": "6727fe0c26d46516",
+        "name": "SPRESENSEから貯金額を取得→kintoneに送信",
+        "info": "",
+        "x": 220,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "e877de9726e778f4",
+        "type": "comment",
+        "z": "6727fe0c26d46516",
+        "name": "レコードの登録",
+        "info": "",
+        "x": 1500,
+        "y": 1320,
+        "wires": []
+    },
+    {
+        "id": "309237ea4b991616",
+        "type": "comment",
+        "z": "6727fe0c26d46516",
+        "name": "レコードの更新",
+        "info": "\"type\": \"NUMBER\",",
+        "x": 1180,
+        "y": 1720,
+        "wires": []
+    },
+    {
+        "id": "a0f5a98385176da6",
+        "type": "debug",
+        "z": "6727fe0c26d46516",
+        "name": "msg.payload",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1990,
+        "y": 1660,
+        "wires": []
+    },
+    {
+        "id": "2430b2d465bee1da",
+        "type": "http response",
+        "z": "6727fe0c26d46516",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1330,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "bf5d2bc0e44487f1",
+        "type": "http response",
+        "z": "6727fe0c26d46516",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1970,
+        "y": 1720,
+        "wires": []
+    },
+    {
+        "id": "62057baf2871896c",
+        "type": "function",
+        "z": "6727fe0c26d46516",
+        "name": "kintone API",
+        "func": "var access_token = \"jdYiEUOpIEWKx5dUK3y6JVRMInHgntSO2Xo5g3Mn\";\n\nvar post_request = {\n    \"url\": \"https://hspexomu0jmh.cybozu.com/k/v1/records.json\",\n    \"headers\": {\n        \"X-Cybozu-API-Token\": access_token,\n        \"Content-Type\": \"application/json\"\n    },\n    \"body\": {\n        \"app\": 1,\n            \"records\": [\n                {\"id\":10,\n                    \"record\": {\n                        \"数値\": {\n                            \"value\": \"100\"\n                        }\n                    }\n                }\n            ]\n        ,\n    }\n}\nreturn post_request;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1430,
+        "y": 1800,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "005b0feb4c30d93a",
+        "type": "function",
+        "z": "6727fe0c26d46516",
+        "g": "ccb5fb9013ce2f17",
+        "name": "目標金額　ー　合計貯金額",
+        "func": "var goal_money = 0;\nvar now_money = 0;\nvar now_level = 0;\n\nfor (let index = 0; index < msg.coinbox.name.length;index++) {\n    if (msg.coinbox.name[index] == \"目標金額\") {\n        goal_money = msg.coinbox.coin[index]\n    }\n    else {\n        now_money += msg.coinbox.coin[index]\n    }   \n}\n\nif (now_money <= goal_money / 3) {\n    msg.level = \"1\"\n}\nelse if (now_money <= goal_money / 2) {\n    msg.level = \"2\"\n}\nelse {\n    msg.level = \"3\"\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 620,
+        "y": 340,
+        "wires": [
+            [
+                "246de9b46864c1c8"
+            ]
+        ]
+    },
+    {
+        "id": "e7c5ef702709e878",
+        "type": "debug",
+        "z": "6727fe0c26d46516",
+        "g": "ccb5fb9013ce2f17",
+        "name": "debug 8",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1140,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "5b0cc1176ce6bbe7",
+        "type": "websocket out",
+        "z": "6727fe0c26d46516",
+        "g": "ccb5fb9013ce2f17",
+        "name": "Spresenseへの入力",
+        "server": "bf03372d666424a5",
+        "client": "",
+        "x": 1170,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "246de9b46864c1c8",
+        "type": "switch",
+        "z": "6727fe0c26d46516",
+        "g": "ccb5fb9013ce2f17",
+        "name": "",
+        "property": "level",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "2",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "3",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 590,
+        "y": 440,
+        "wires": [
+            [
+                "d91a578c2c759ead"
+            ],
+            [
+                "55f7dfbd23a4b3a9"
+            ],
+            [
+                "592e03d87ce7068f"
+            ]
+        ]
+    },
+    {
+        "id": "d91a578c2c759ead",
+        "type": "template",
+        "z": "6727fe0c26d46516",
+        "g": "ccb5fb9013ce2f17",
+        "name": "Level.1(Reset)",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "{\"device_id\":\"31129\",\"type\":\"object\",\"timestamp_src\":\"2023-07-07T00:00:00.000Z\",\"payload\":[{\"type\":\"uint8\",\"tag\":\"1\",\"value\":1}]}",
+        "output": "str",
+        "x": 900,
+        "y": 400,
+        "wires": [
+            [
+                "5b0cc1176ce6bbe7",
+                "e7c5ef702709e878"
+            ]
+        ]
+    },
+    {
+        "id": "55f7dfbd23a4b3a9",
+        "type": "template",
+        "z": "6727fe0c26d46516",
+        "g": "ccb5fb9013ce2f17",
+        "name": "Level.2",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "{\"device_id\":\"31129\",\"type\":\"object\",\"timestamp_src\":\"2023-07-07T00:00:00.000Z\",\"payload\":[{\"type\":\"uint8\",\"tag\":\"1\",\"value\":2}]}",
+        "output": "str",
+        "x": 880,
+        "y": 440,
+        "wires": [
+            [
+                "5b0cc1176ce6bbe7",
+                "e7c5ef702709e878"
+            ]
+        ]
+    },
+    {
+        "id": "592e03d87ce7068f",
+        "type": "template",
+        "z": "6727fe0c26d46516",
+        "g": "ccb5fb9013ce2f17",
+        "name": "Level.3(GOLE!)",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "{\"device_id\":\"31129\",\"type\":\"object\",\"timestamp_src\":\"2023-07-07T00:00:00.000Z\",\"payload\":[{\"type\":\"uint8\",\"tag\":\"1\",\"value\":3}]}",
+        "output": "str",
+        "x": 900,
+        "y": 480,
+        "wires": [
+            [
+                "5b0cc1176ce6bbe7",
+                "e7c5ef702709e878"
+            ]
+        ]
+    },
+    {
+        "id": "979ea0f973094eb4",
+        "type": "debug",
+        "z": "6727fe0c26d46516",
+        "g": "ccb5fb9013ce2f17",
+        "name": "debug",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 890,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "8017f839508f86b5",
+        "type": "change",
+        "z": "6727fe0c26d46516",
+        "g": "ccb5fb9013ce2f17",
+        "name": "",
+        "rules": [
+            {
+                "t": "delete",
+                "p": "payload.totalCount",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 370,
+        "y": 120,
+        "wires": [
+            [
+                "f83d5be16a358b68"
+            ]
+        ]
+    },
+    {
+        "id": "05e52e855d50d7eb",
+        "type": "function",
+        "z": "6727fe0c26d46516",
+        "name": "Read payload",
+        "func": "var person_number = []\nvar money_value = []\nvar is_change = false\nfor (let index = 0; index < msg.payload['payload'].length - 1; index++) {\n        person_number.push(msg.payload['payload'][index]['value'])\n        money_value.push(msg.payload['payload'][index + 1]['value'])\n        msg.recordMax = index + 1 \n}\nmsg.person_num = person_number\nmsg.money_value = money_value\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 120,
+        "y": 1160,
+        "wires": [
+            [
+                "f42ff08ba48b3fb2",
+                "2e53defbaf6a80f7",
+                "b8c90afa6fe3ec75",
+                "bd6ff49e9141fc07"
+            ]
+        ]
+    },
+    {
+        "id": "643fee64eb2be0c7",
+        "type": "change",
+        "z": "6727fe0c26d46516",
+        "name": "person_num, money_value, recordMax登録",
+        "rules": [
+            {
+                "t": "set",
+                "p": "person_num",
+                "pt": "msg",
+                "to": "0",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "money_value",
+                "pt": "msg",
+                "to": "0",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "recordMax",
+                "pt": "msg",
+                "to": "0",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 510,
+        "y": 1000,
+        "wires": [
+            [
+                "05e52e855d50d7eb"
+            ]
+        ]
+    },
+    {
+        "id": "54e3be7d2409cb94",
+        "type": "template",
+        "z": "6727fe0c26d46516",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "{\"id\":{{p_num}},\"record\":{\"数値\":{\"value\":{{m_value}}}}}",
+        "output": "str",
+        "x": 760,
+        "y": 1240,
+        "wires": [
+            [
+                "0be46f6e46e1c226",
+                "9c2bcd668c4448e1"
+            ]
+        ]
+    },
+    {
+        "id": "f42ff08ba48b3fb2",
+        "type": "change",
+        "z": "6727fe0c26d46516",
+        "name": "loopCount = 0",
+        "rules": [
+            {
+                "t": "set",
+                "p": "loopCount",
+                "pt": "msg",
+                "to": "0",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "json",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 1380,
+        "wires": [
+            [
+                "c5d737909948230c"
+            ]
+        ]
+    },
+    {
+        "id": "c5d737909948230c",
+        "type": "switch",
+        "z": "6727fe0c26d46516",
+        "name": "loopCount <= recordMax チェック",
+        "property": "loopCount",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "lt",
+                "v": "recordMax",
+                "vt": "msg"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 840,
+        "y": 1480,
+        "wires": [
+            [
+                "6f989690d94ec795"
+            ],
+            [
+                "693a525696e0efc3"
+            ]
+        ]
+    },
+    {
+        "id": "299cb4dc4965a966",
+        "type": "function",
+        "z": "6727fe0c26d46516",
+        "name": "msg.json += msg.payload + \",\"",
+        "func": "msg.json += msg.payload + \",\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 490,
+        "y": 1480,
+        "wires": [
+            [
+                "c5d737909948230c"
+            ]
+        ]
+    },
+    {
+        "id": "6f989690d94ec795",
+        "type": "change",
+        "z": "6727fe0c26d46516",
+        "name": "ループ中",
+        "rules": [],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1260,
+        "y": 1460,
+        "wires": [
+            [
+                "fac51cba18e6f1b5",
+                "9811708989133616"
+            ]
+        ]
+    },
+    {
+        "id": "693a525696e0efc3",
+        "type": "change",
+        "z": "6727fe0c26d46516",
+        "name": "ループ完了",
+        "rules": [],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1270,
+        "y": 1500,
+        "wires": [
+            [
+                "e17b5dd41d85d037",
+                "23aadbd23ab8972c"
+            ]
+        ]
+    },
+    {
+        "id": "e17b5dd41d85d037",
+        "type": "debug",
+        "z": "6727fe0c26d46516",
+        "name": "loopCount_SUM",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "loopCount",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1510,
+        "y": 1520,
+        "wires": []
+    },
+    {
+        "id": "fac51cba18e6f1b5",
+        "type": "debug",
+        "z": "6727fe0c26d46516",
+        "name": "loopCount",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "loopCount",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1490,
+        "y": 1480,
+        "wires": []
+    },
+    {
+        "id": "9c2bcd668c4448e1",
+        "type": "debug",
+        "z": "6727fe0c26d46516",
+        "name": "msg.payload",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 970,
+        "y": 1220,
+        "wires": []
+    },
+    {
+        "id": "9811708989133616",
+        "type": "change",
+        "z": "6727fe0c26d46516",
+        "name": "msg.p_num追加,msg.m_value追加",
+        "rules": [
+            {
+                "t": "set",
+                "p": "p_num",
+                "pt": "msg",
+                "to": "0",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "m_value",
+                "pt": "msg",
+                "to": "0",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1240,
+        "y": 1380,
+        "wires": [
+            [
+                "777894d465bb3dbf"
+            ]
+        ]
+    },
+    {
+        "id": "23aadbd23ab8972c",
+        "type": "function",
+        "z": "6727fe0c26d46516",
+        "name": "Json解析",
+        "func": "var outputString = JSON.parse(msg.json)\nmsg.payload = [outputString]\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1200,
+        "y": 1660,
+        "wires": [
+            [
+                "a79da5a77515bf88",
+                "06d8bbcdf63a77dc"
+            ]
+        ]
+    },
+    {
+        "id": "a79da5a77515bf88",
+        "type": "debug",
+        "z": "6727fe0c26d46516",
+        "name": "msgオブジェクト",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1390,
+        "y": 1740,
+        "wires": []
+    },
+    {
+        "id": "19832f328969ffbf",
+        "type": "switch",
+        "z": "6727fe0c26d46516",
+        "name": "loopCount == recordMax チェック",
+        "property": "loopCount",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "lt",
+                "v": "recordMax",
+                "vt": "msg"
+            },
+            {
+                "t": "eq",
+                "v": "recordMax",
+                "vt": "msg"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 160,
+        "y": 1500,
+        "wires": [
+            [
+                "299cb4dc4965a966"
+            ],
+            [
+                "1bbd168482bff925"
+            ]
+        ]
+    },
+    {
+        "id": "1bbd168482bff925",
+        "type": "function",
+        "z": "6727fe0c26d46516",
+        "name": "msg.json += msg.payload",
+        "func": "msg.json += msg.payload\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 1520,
+        "wires": [
+            [
+                "c5d737909948230c",
+                "30e7409897fd2e2e"
+            ]
+        ]
+    },
+    {
+        "id": "777894d465bb3dbf",
+        "type": "function",
+        "z": "6727fe0c26d46516",
+        "name": "person_num[loopCount]をp_numに、money_value[loopCount]をm_valueに",
+        "func": "msg.p_num = 10\nmsg.m_value = \"1000\"\n// msg.p_num = msg.person_num[msg.loopCount]\n// msg.m_value = msg.money_value[msg.loopCount]\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1010,
+        "y": 1320,
+        "wires": [
+            [
+                "54e3be7d2409cb94"
+            ]
+        ]
+    },
+    {
+        "id": "2e53defbaf6a80f7",
+        "type": "debug",
+        "z": "6727fe0c26d46516",
+        "name": "person_num",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "person_num",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 310,
+        "y": 1120,
+        "wires": []
+    },
+    {
+        "id": "b8c90afa6fe3ec75",
+        "type": "debug",
+        "z": "6727fe0c26d46516",
+        "name": "money_value",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "money_value",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 310,
+        "y": 1200,
+        "wires": []
+    },
+    {
+        "id": "bd6ff49e9141fc07",
+        "type": "debug",
+        "z": "6727fe0c26d46516",
+        "name": "msg.recordMax",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "recordMax",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 320,
+        "y": 1160,
+        "wires": []
+    },
+    {
+        "id": "0be46f6e46e1c226",
+        "type": "function",
+        "z": "6727fe0c26d46516",
+        "name": "loopCount++",
+        "func": "msg.loopCount += 1\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 770,
+        "y": 1120,
+        "wires": [
+            [
+                "19832f328969ffbf"
+            ]
+        ]
+    },
+    {
+        "id": "30e7409897fd2e2e",
+        "type": "debug",
+        "z": "6727fe0c26d46516",
+        "name": "msg.json",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "json",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 800,
+        "y": 1680,
+        "wires": []
+    },
+    {
+        "id": "306327f66e92a8b6",
+        "type": "http request",
+        "z": "6727fe0c26d46516",
+        "name": "POST",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://hspexomu0jmh.cybozu.com/k/v1/records.json",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [
+            {
+                "keyType": "Content-Type",
+                "keyValue": "",
+                "valueType": "application/json",
+                "valueValue": ""
+            },
+            {
+                "keyType": "msg",
+                "keyValue": "",
+                "valueType": "other",
+                "valueValue": ""
+            }
+        ],
+        "x": 1750,
+        "y": 1760,
+        "wires": [
+            [
+                "bf5d2bc0e44487f1",
+                "a0f5a98385176da6"
+            ]
+        ]
+    },
+    {
+        "id": "dfdc1921e4957490",
+        "type": "debug",
+        "z": "6727fe0c26d46516",
+        "g": "ccb5fb9013ce2f17",
+        "name": "msg.payload",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 350,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "06d8bbcdf63a77dc",
+        "type": "kintone",
+        "z": "6727fe0c26d46516",
+        "name": "複数レコードの更新",
+        "config": "dd45bd7800d826eb",
+        "appId": "1",
+        "query": "",
+        "records": "",
+        "method": "PUT",
+        "x": 1460,
+        "y": 1640,
+        "wires": [
+            [
+                "90d388e8e8fd5052",
+                "d2dea9ac33c48857"
+            ]
+        ]
+    },
+    {
+        "id": "90d388e8e8fd5052",
+        "type": "http response",
+        "z": "6727fe0c26d46516",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1690,
+        "y": 1640,
+        "wires": []
+    },
+    {
+        "id": "d2dea9ac33c48857",
+        "type": "debug",
+        "z": "6727fe0c26d46516",
+        "name": "payload",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1640,
+        "y": 1700,
+        "wires": []
+    },
+    {
+        "id": "69f747debf30774e",
+        "type": "websocket in",
+        "z": "6727fe0c26d46516",
+        "name": "Spresenseからの入力",
+        "server": "",
+        "client": "b6dcd9c2112b6098",
+        "x": 120,
+        "y": 780,
+        "wires": [
+            [
+                "fcb9627639ab8dac"
+            ]
+        ]
+    },
+    {
+        "id": "fcb9627639ab8dac",
+        "type": "change",
+        "z": "6727fe0c26d46516",
+        "name": "delete timiestamp",
+        "rules": [
+            {
+                "t": "delete",
+                "p": "payload[\"type\"]",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "payload[\"timestamp\"]",
+                "pt": "msg"
+            },
+            {
+                "t": "set",
+                "p": "delete",
+                "pt": "msg",
+                "to": "\\{\\}",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 230,
+        "y": 840,
+        "wires": [
+            [
+                "bf242af1eb59a69d"
+            ]
+        ]
+    },
+    {
+        "id": "bf242af1eb59a69d",
+        "type": "switch",
+        "z": "6727fe0c26d46516",
+        "name": "空チェック",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "empty"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 270,
+        "y": 900,
+        "wires": [
+            [],
+            [
+                "77c5373b1ab1f22d",
+                "643fee64eb2be0c7"
+            ]
+        ]
+    },
+    {
+        "id": "77c5373b1ab1f22d",
+        "type": "debug",
+        "z": "6727fe0c26d46516",
+        "name": "payload",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 420,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "59ff2a1.fa600d4",
+        "type": "http in",
+        "z": "f511b92ff1cd1d5b",
+        "name": "",
+        "url": "/hello",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 280,
+        "y": 240,
+        "wires": [
+            [
+                "54c1e70d.ab3e18"
+            ]
+        ]
+    },
+    {
+        "id": "54c1e70d.ab3e18",
+        "type": "template",
+        "z": "f511b92ff1cd1d5b",
+        "name": "page",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "<html>\n    <head></head>\n    <body>\n        <h1>Hello World!</h1>\n    </body>\n</html>",
+        "x": 430,
+        "y": 240,
+        "wires": [
+            [
+                "266c286f.d993d8"
+            ]
+        ]
+    },
+    {
+        "id": "266c286f.d993d8",
+        "type": "http response",
+        "z": "f511b92ff1cd1d5b",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 570,
+        "y": 240,
+        "wires": []
+    }
+]
